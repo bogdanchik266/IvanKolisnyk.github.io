@@ -39,7 +39,7 @@ div#menu {
 	align-items: center;
 	display: grid;
 	justify-content: space-around;
-
+	background-color: white;
 }
 .categories ul li{
 	 font-family: "Roboto Slab", serif;
