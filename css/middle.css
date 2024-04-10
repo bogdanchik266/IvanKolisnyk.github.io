@@ -1,0 +1,211 @@
+#maintext{
+	text-align: center;
+}
+
+#maintext h1{
+	color: #735440;
+	font-size: 48px;
+	font-weight: bold;
+	 font-family: "Roboto Slab", serif;
+}
+#maintext a{
+	
+	text-decoration: none;
+	background-color: #57984C;
+	color: #FFFFFF;
+	font-size: 16px;
+	text-align: center;
+	width: 155px;
+	height: 55px;
+	padding: 16px 31px;
+  font-family: "Roboto", sans-serif;
+
+  font-style: normal;
+
+}
+div#menu {
+     margin-top: 40px; 
+}
+.content{
+	background-image: url(../images/Banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 300px 0px;
+	margin-top: -137px;
+}
+.categories{
+	padding: 45px 0;
+	align-items: center;
+	display: grid;
+	justify-content: space-around;
+
+}
+.categories ul li{
+	 font-family: "Roboto Slab", serif;
+}
+.text_center{
+	text-align: center;
+}
+.categories-2{
+	padding: 50px 0;
+    color: #324950;
+    font-size: 18px;
+    background: #EDEDED;
+    text-align: center;
+}
+.categories-2 .title{
+	    font-size: 64px;
+    line-height: 64px;
+    font-weight: bold;
+    color: #324950;
+    margin: 0 0 50px;
+     font-family: "Roboto Slab", serif;
+}
+.categories-2 .name a {
+    color: #57984C;
+    font-size: 16px;
+    font-weight: bold;
+     font-family: "Roboto Slab", serif;
+}
+
+.categories-2 .name {
+    margin: 10px 0 0;
+}
+.text-2{
+	     font-family: "Roboto Slab", serif;
+}
+a {
+    text-decoration: none;
+}
+.categories-2 .name a:after {
+    content: "";
+    border-bottom: 1px solid #57984C;
+    display: block;
+    height: 1px;
+    max-width: 180px;
+    width: 100%;
+    margin: 25px auto;
+}
+
+.home-big{
+	background-image: url(../images/Union.png);
+	background-color: #F7F7F7;
+	background-repeat: no-repeat;
+	padding: 50px 0px 50px 0px ;
+	background-position: center;
+}
+.home-big .title{
+	font-size: 64px;
+	font-weight: bold;
+	color: #324950;
+	 font-family: "Roboto Slab", serif;
+}
+.home-big p{
+	font-size: 20px;
+	color: #324950;
+	 font-family: "Roboto Slab", serif;
+}
+.home-big .title{
+	margin: 104px 0 0;
+}
+
+
+
+
+
+
+
+
+.title{
+	font-size:48px; 
+	padding-top: 50px;
+}
+.banner2{
+	padding-top: 33px;
+	padding-bottom: 24px;
+}
+.row .title{
+	 font-family: "Roboto Slab", serif;
+	 color: #324950;
+}
+.main_tomato{
+	 font-family: "Roboto Slab", serif;
+	 color: #324950;
+}
+.container{
+	    padding: 50px 0px;
+	    background-color: #FFFAFA;
+}
+.middle{
+	background-color: #FCF0F0;
+}
+.coltitle{
+	height: 50px;
+	font-size: 20px;
+	color: #324950;
+	font-family: "Roboto Slab", serif;
+}
+.coltext{
+	font-size: 17px;
+	color: #324950;
+	font-family: "Roboto Slab", serif;
+}
+.text3{
+	border-left: 3px solid #EB5757; 
+	padding-left: 22px;
+	font-family: "Roboto Slab", serif;
+}
+.line{
+	 border-bottom: 1px solid #324950;
+}
+.sorts{
+	  display: flex;
+
+    flex-direction: row;
+
+flex-wrap: wrap;
+
+    border: 0px solid black;
+}
+
+.col{
+	margin-left: 30px;
+}
+.sort {
+	background-color: white;
+	color: #57984C;
+	font-size: 16px;
+	text-align: center;
+	 font-family: "Roboto Slab", serif;
+	 margin-right: 22px;
+	 margin-top: 30px;
+	     width: 350px;
+
+}
+.sort a{
+	color: #57984C;
+	font-size: 20px;
+	margin: 0;
+
+}
+.sort_description{
+
+	height: 69px;
+position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
