@@ -1,0 +1,106 @@
+body{
+	margin: 0;
+}
+
+.wrapper{
+	max-width: 1127px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.wrapper2{
+
+	max-width: 1127px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 20px;
+display: grid;
+justify-content: center;
+}
+.row::after{
+	clear: both;
+	content: "";
+	display: flex;
+
+}
+.w70{
+	width: 70%;
+	float: left;
+}
+.w2{
+	width: 50%;
+	float: left;
+}
+.w3{
+	width: 30%;
+	float: left;
+}
+.w32{
+	width: 29%;
+	float: left;
+}
+.w5{
+	width: 8%;
+	float: right;
+}
+.w7{
+	width: 14,28%;
+	float: left;
+
+}
+ul, li{
+    display: inline; /* Отображать как строчный элемент */
+
+   }
+ul{
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+}
+.text-align{
+	text-align: right;
+}
+.text-align2{
+	text-align: center;
+}
+#search{
+		border-bottom: 1px solid #324950;
+		display: inline-block;
+		max-width: 350px;
+		width: 100%;
+}
+#search input{
+	font-size: 16px;
+	color:#324950;
+	background-color: transparent;
+	border: none;
+	max-width: 320px;
+	width: 100%;
+
+}
+#search input::placeholder{
+	color:#324950;
+}
+#search button{
+	background: url(../images/ico_search.png) no-repeat center;
+	font-size: 0;
+	height: 25px;
+	width: 18px;
+	border: none;
+	cursor: pointer;
+}
+#menu ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	  font-family: "Heebo", sans-serif;
+}
+#menu ul li{
+	display: inline;
+	margin-left: 15px;
+}
+#menu ul a{
+	color:#324950;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+}
