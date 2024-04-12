@@ -203,6 +203,85 @@ position: relative;
 
 
 
+.middle_tomatoone{
+	background-color: #F7F7F7;
+	background-image: url(../images/tomatoonebg.png);
+background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 1216px;
+}
+.redtext{
+float: left;
+	 height: 86px;
+	 margin-left: 80px;
+}
+	 .cont{
+    height: 86px;
+    position: relative;
+    margin-top: 45px;
+   }
+.dspflex{
+	display: flex;
+}
+.flright{
+	float: right;
+}
+.Btndownloadpdf{
+	margin-top: 30px;
+}
+.redtext{
+	font-size: 30px;
+	color: #CF2333;
+	font-weight: bold;
+	padding: 0 0 0 23px ;
+	 font-family: "Roboto Slab", serif;
+
+}
+.redimg img{
+    position: absolute;
+  top: 0;
+  bottom: 0;
+float: left;
+  margin: auto;
+
+}
+.bigtext{
+	font-size: 54px;
+	 font-family: "Roboto Slab", serif;
+	 font-weight: bold;
+	 color: #324950;
+}
+.bigtext2{
+	font-size: 54px;
+	 font-family: "Roboto Slab", serif;
+	 font-weight: bold;
+	 color: #57984C;
+}
+.CHARACTERISTICS .title{
+	color: #57984C;
+	font-size: 20px;
+	font-weight: bold;
+}
+.CHARACTERISTICS .title2{
+	color: #324950;
+	font-size: 20px;
+	font-weight: bold;
+	 font-family: "Roboto Slab", serif;
+}
+.CHARACTERISTICS .text{
+	margin-top: 20px;
+}
+.chartext{
+	font-size: 17px;
+	 color: #324950;
+	 font-family: "Roboto Slab", serif;
+}
+.spisokkk{
+	display: list-item;
+}
+
+
 
 
 
