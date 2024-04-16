@@ -27,6 +27,14 @@ justify-content: center;
 	width: 70%;
 	float: left;
 }
+.w60{
+	width: 60%;
+	float: left;
+}
+.w40{
+	width: 40%;
+	float: left;
+}
 .w2{
 	width: 50%;
 	float: left;
