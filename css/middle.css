@@ -291,3 +291,35 @@ float: left;
 
 
 
+.input{
+	 font-family: "Roboto Slab", serif;
+	 color: #324950;
+	 font-size: 17px;
+}
+.title_con_us{
+	 font-family: "Roboto Slab", serif;
+	 color: #324950;
+	font-size: 44px;
+	font-weight: bold;
+}
+
+.text-center{
+	text-align: center;
+}
+.bg-white{
+	background-color: white;
+}
+.container-con_us{
+	padding: 40px 40px;
+}
+.bg_cont_us{
+	background-color: #F7F7F7;
+}
+.contact_input{
+	 font-size:28px;
+	 height: 55px;
+	 border-radius: 10px;
+	 border: 1px solid #DADADA;
+}
+
+
