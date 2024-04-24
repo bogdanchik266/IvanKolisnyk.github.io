@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/middle.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <meta name="viewport" content="width=320, initial-scale=1.0"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+	<title>Tomato one</title>
+</head>	
+<body class="bg_cont_us">
+
+<div class="header">
+<div class="cont-head">
+    <div class="wrapper">
+
+    <div class="row">
+
+        <div class="w2">
+            <div id="Logo">
+                <img src="images/Logo.png" class="logoimg">
+            </div>
+        </div>
+        <div class="w2 text-align menunav">
+            <div id="search">
+                <input type="text" placeholder="Search">
+                <button>Submit</button>
+            </div>
+                    <input type="checkbox" id="burger">
+        <label for="burger">☰</label>   
+        <nav id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Company Profile</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">R & D</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="middle2">
+    <img src="images/banner_contactus.jpg" class="banner">
+<div class="padcus">
+    <div class="wrapper bg_cont_us">
+            <div class="title_con_us">
+                Contact us
+            </div>
+    <section class="contactUs" style="text-align: center;">
+        <div class="container" style="background-color: white;">
+            <div class="row">
+            </div>
+            <form v-on:submit.prevent="makeOrder()" v-if="!orderVisible">
+
+                <div class="cart">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col" style="width: 300px;">Image</th>
+                            <th scope="col" style="width: 300px;">Name</th>
+                            <th scope="col" style="width: 300px;">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr v-if="cart" v-for="i in cart" style="width: 100%;">
+                            <td scope="row"><img :src="'images/onion/'+i.image" height="100px" alt=""></td>
+                            <td>{{i.title}}</td>
+                            <td>{{i.short_text}}</td>
+                            <td><a @click.prevent="removeFromCart(i.id)"><img src="images/redkrest.png" height="20px" alt="close" :id="'remove_'+i.id"></a></td>
+                          </tr>
+                        </tbody>
+                    </table>
+                      <div class="bucket" v-if="cart.length<1">
+                        Your cart is empty
+                      </div>
+                      <hr>
+                </div>
+    </section>
+            <img src="images/krestiki.png" style="padding: 40px 0px;">
+            <div class="row">
+<form>
+                <div class="w40">
+                    <div class="name">
+                                    <div class="input">Name * <p style="margin-bottom: -10px;"></p>
+                                    <input type="text" name="firstname" class="contact_input" required>
+                                    </div>
+                                </div>
+                                <div class="name">
+                                    <div class="input" style="padding-top: 20px;">Company name<p style="margin-bottom: -10px;"></p>
+                                    <input type="text" name="companyName" class="contact_input" required>
+                                    </div>
+                                </div>
+                                <div class="name">
+                                    <div class="input" style="padding-top: 20px;">Position<p style="margin-bottom: -10px;"></p>
+                                    <input type="text" name="Position" class="contact_input" required>
+                                    </div>
+                                </div>
+                                <div class="name">
+                                    <div class="input" style="padding-top: 20px;">City<p style="margin-bottom: -10px;"></p>
+                                    <input type="text" name="City" class="contact_input" required>
+                                    </div>
+                                </div>
+                                <div class="name">
+                                    <div class="input" style="padding-top: 20px;">Country<p style="margin-bottom: -10px;"></p>
+                                    <input type="text" name="Country" class="contact_input" required> 
+                                    </div>
+                                </div>
+                                <div class="name">
+                                    <div class="input" style="padding-top: 20px;">Telephone<p style="margin-bottom: -10px;"></p>
+                                    <input type="tel" name="Telephone" class="contact_input" required>
+                                    </div>
+                                </div>
+                                <div class="name">
+                                    <div class="input" style="padding-top: 20px;">Email<p style="margin-bottom: -10px;"></p>
+                                    <input type="email" name="Email" class="contact_input" required>
+                                    </div>
+                                </div>
+                </div>
+                <div class="w60">
+                        <div class="name">
+                                <div class="input">You are a <p style="margin-bottom: -10px;"></p>
+                                <select id="you_are" class="contact_input2" name="iam">
+                                    <option value="seed_producer">seed producer</option>
+                                    <option value="farmer">farmer</option>
+                                    <option value="harvester_river">harvester river</option>
+                                </select>
+                                </div>
+                                </div>
+                                <div class="name">
+                                <div class="input" style="padding-top: 20px;">If other, please specify<p style="margin-bottom: -10px;"></p>
+                                    <input type="text" name="other" class="contact_input2"  required>
+                                    </div>
+                                </div>  
+                                <div class="name">
+                                    <div class="input" style="padding-top: 20px;">You are interested in<p style="margin-bottom: -10px;"></p>
+                                        <input type="text" name="interested" class="contact_input" style="height: 390px;width: 635px;" required>
+                                        </div>
+                                    </div>    
+                                    <div class="name center">
+                                        <div class="input" style="padding-top: 18px;">Please type this code<p style="margin-bottom: -10px; width: 40px;"></p>
+                                            <img src="images/capcha.png"><input type="text" name="interested" class="contact_input" style="margin-left: 22px;width:250px;margin-right: 20px; max-width: 33%;" required> 
+                                            <button class="btn read_more_b send_mes text-right" style="text-align: center; border-radius:60px; padding-top: 20px;padding-bottom: 20px; width: 255px;font-size: 17px;border: none;background-color: #57984C;color: white;margin-left: 10px;" type="Submit">Send Message</button>
+                                            
+                                            </div>
+                                    </div> 
+                </div>
+</form>
+
+            </div>
+    </div>
+</div>
+
+            <div class="container-con_us bg-white text-center" style="margin-top: 35px;">
+                <b style="color:#57984C; font-size: 20px;font-family: Roboto Slab;">Our Address</b><br>
+                <hr align="center" width="183px"><div style="font-size: 17px;font-family: Roboto Slab;color: #324950;">
+                AGRIDERA Seeds & Agriculture Ltd. <br>
+                P.O Box 103, <br>
+                Gedera 70750, Israel. <br>
+                Telephone:<a href="tel:97289449222" style="color:#57984C;">+972 8 944 9222</a></div>
+            </div>
+</div>
+
+
+
+
+
+
+<div class="footer">
+
+    <div class="wrapper">
+        <div class="w70">
+        <div>
+            <ul>
+                <li><a href="">PROFILE</a></li>
+                <li><a href="">MANAGEMENT</a></li>
+                <li><a href="">PRODUCTS</a></li>
+                <li><a href="">R&D</a></li>
+                <li><a href="">LINKS</a></li>
+                <li><a href="">SITEMAP</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="socialnatworks">
+            <ul>
+                <li><a href=""><img src="images/linkedin.png"></a></li>
+                <li><a href=""><img src="images/Ico_inst.png"></a></li>
+                <li><a href=""><img src="images/Ico_tube.png"></a></li>
+                <li><a href=""><img src="images/Ico_tw.png"></a></li>
+                <li><a href=""><img src="images/Ico_fb.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright text-align2">
+        <div class="">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

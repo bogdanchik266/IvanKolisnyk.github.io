@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Homepage</title>
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/middle.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<meta name="viewport" content="width=320, initial-scale=1.0"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=320, initial-scale=1.0"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+<div class="cont-head">
+	<div class="wrapper">
+	<div class="row">
+		<div class="w2">
+			<div id="Logo">
+				<img src="images/Logo.png" class="logoimg">
+			</div>
+		</div>
+		<div class="w2 text-align menunav">
+			<div id="search">
+				<input type="text" placeholder="Search">
+				<button>Submit</button>
+			</div>
+					<input type="checkbox" id="burger">
+		<label for="burger">☰</label>	
+		<nav id="menu">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Company Profile</a></li>
+				<li><a href="">Products</a></li>
+				<li><a href="">Services</a></li>
+				<li><a href="">R & D</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+	<div class="middle_tomatoone">
+			<div class="wrapper">
+				<div class="row">
+					<div class="w2">
+
+						<a href="tomato all.html"><img src="images/breadcrumbs.png" class="padimg"></a>
+
+					</div>
+				</div>
+
+
+
+				<div class="row item" v-if="product">
+				<div class="w2 paddto">
+					<div class="bigtext">
+					{{product.title}}
+                            			
+					</div>
+					<div class="bigtext2">
+						{{product.short_text}}	
+					</div>
+					<img src="images/krestiki.png" style="margin-top: 48px;">
+					<div class="cont">
+  						<div class="redimg"><img src="images/tomatoonelogo.png"></div>
+ 						<div class="redtext">Very high yield and<br> excellent fruits quality!</div>
+					</div>
+
+
+
+
+					<div class="CHARACTERISTICS">
+						<div class="title"><p>CHARACTERISTICS</p></div>
+						<hr  class="liniya">
+							<div class="text">
+								<div class="title2">Resistance</div>
+								<div class="chartext">HR: ToMV:0-2; Fol: 1,2; Ve/Vd; </div>
+								<div >IR: TYLCV</div>
+							</div>
+					</div>
+				</div>
+					<div class="w2">
+						<img :src="'images/onion/'+product.image" class="flright imgsize" width="550px">
+
+					<div class="download">
+                        <button @click.prevent="addToCart(product.id)" v-if="!btnVisible"><img src="images/pngwingcom.png" height="30" alt="pdf"><span>Add to card</span></button>
+                        <a href="contact us.html"><button v-if="btnVisible"><img src="images/pngwingcom.png" height="30" alt="cart"><span>Go to card</span></button></a>
+                    </div>
+
+					</div>
+				</div>
+
+
+
+				<div class="row">
+				<div class="w2">
+					<div class="CHARACTERISTICS">
+						<div class="title">Plant</div>
+						<hr  class="liniya">
+						<div class="spto"><span style="color: #324950; font-family: Roboto Slab">Strong vigor that provides good leaf coverage.</span></div>
+						<div class="spto"><span style="color: #324950; font-family: Roboto Slab">Very high productivity with good fruit setting.</span></div>
+						<div class="spto"><span style="color: #324950;font-family: Roboto Slab">Early matured variety.</span></div>
+					</div>
+					<div class="CHARACTERISTICS">
+						<div class="title">Fruit</div>
+						<hr  class="liniya">
+						<div class="spto"><span style="color: #324950;font-family: Roboto Slab">Long shelf life on plant and post harvest.</span></div>
+						<div class="spto"><span style="color: #324950;font-family: Roboto Slab">Nice shiny attractive deep red color.</span></div>
+						<div class="spto"><span style="color: #324950;font-family: Roboto Slab">Average fruit size: 140 – 160 grams.</span></div>
+					</div>
+				</div>
+				<div class="w2">
+					<div class="CHARACTERISTICS">
+						<div class="title">Cycle</div>
+						<hr  class="liniya">
+						<div class="spto"><span style="color: #324950;font-family: Roboto Slab">Spring</span></div>
+						<div class="spto"><span style="color: #324950;font-family: Roboto Slab">Fall</span></div>
+						<div class="spto"><span style="color: #324950;font-family: Roboto Slab">Winter</span></div>
+					</div>
+					<div class="CHARACTERISTICS">
+						<div class="title">Color</div>
+						<hr  class="liniya">
+						<div class="spto"><span style="color: #324950;font-family: Roboto Slab">Red</span></div>
+					</div>
+				</div>
+				</div>
+
+</div>
+</div>
+
+
+
+
+<div class="footer">
+
+	<div class="wrapper">
+		<div class="w70">
+		<div>
+			<ul>
+				<li><a href="">PROFILE</a></li>
+				<li><a href="">MANAGEMENT</a></li>
+				<li><a href="">PRODUCTS</a></li>
+				<li><a href="">R&D</a></li>
+				<li><a href="">LINKS</a></li>
+				<li><a href="">SITEMAP</a></li>
+				<li><a href="">CONTACT</a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="socialnatworks">
+			<ul>
+				<li><a href=""><img src="images/linkedin.png"></a></li>
+				<li><a href=""><img src="images/Ico_inst.png"></a></li>
+				<li><a href=""><img src="images/Ico_tube.png"></a></li>
+				<li><a href=""><img src="images/Ico_tw.png"></a></li>
+				<li><a href=""><img src="images/Ico_fb.png"></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="copyright text-align2">
+		<div class="">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</div>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="js/main.js"></script>	
+</body>
+</html>
